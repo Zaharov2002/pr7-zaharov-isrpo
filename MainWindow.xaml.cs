@@ -24,5 +24,15 @@ namespace pr7_zaharov
         {
             InitializeComponent();
         }
+
+        private void RadioButton_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Лук, свекла, картошка, свининав, свекольный квас");
+        }
+
+        private void CheckBox_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

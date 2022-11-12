@@ -5,11 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pr7_zaharov"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="700">
-    <Grid>
+        Title="MainWindow" Height="500" Width="900">
+    <Grid Background="LightSkyBlue">
         <Grid.ColumnDefinitions>
-            
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="108*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Меню ресторана" Grid.Column="1" Grid.ColumnSpan="3" FontSize="30" />
+        <StackPanel Grid.Row="1">
+            <Expander Header="Борш 120 руб." FontSize="20">
+                <TextBlock FontSize="15"><Run Text="Свекла, картошка, мясо"/></TextBlock>
+            </Expander>
+            <CheckBox Content="Выбрать" FontSize="15"/>
+            <Expander Header="Суп с фрикадельками " FontSize="20">
+                <TextBlock FontSize="15"><Run Text="fdfgdfgdf"/></TextBlock>
+            </Expander>
+            <CheckBox Content="Выбрать" FontSize="15"/>
+            <Expander Header="Опрос" FontSize="20"/>
+        </StackPanel>
+        <Button Content="Заказать" Grid.Column="1" Grid.Row="2" FontSize="20"/>
     </Grid>
 </Window>
