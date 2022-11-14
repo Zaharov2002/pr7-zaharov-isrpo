@@ -18,17 +18,58 @@
             <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
         <TextBlock Text="Меню ресторана" Grid.Column="1" Grid.ColumnSpan="3" FontSize="30" />
-        <StackPanel Grid.Row="1">
-            <Expander Header="Борш 120 руб." FontSize="20">
-                <TextBlock FontSize="15"><Run Text="Свекла, картошка, мясо"/></TextBlock>
-            </Expander>
-            <CheckBox Content="Выбрать" FontSize="15"/>
-            <Expander Header="Суп с фрикадельками " FontSize="20">
-                <TextBlock FontSize="15"><Run Text="fdfgdfgdf"/></TextBlock>
-            </Expander>
-            <CheckBox Content="Выбрать" FontSize="15"/>
-            <Expander Header="Опрос" FontSize="20"/>
-        </StackPanel>
+        <GroupBox Header="Первое блюдо (супы)" FontSize="15" Padding="5" Grid.Row="1">
+            <StackPanel>
+                <RadioButton Content="Борщ с мясом 150 руб" Height="20">
+                    <RadioButton.ToolTip>
+                        <ToolTip Width="397" Height="301">
+                            <StackPanel>
+                                <Image Source="/borsh.jpg"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </RadioButton.ToolTip>
+                </RadioButton>
+                <Expander Header="Состав">
+                    <TextBlock>Свекла, Зеленый лук, Говядина</TextBlock>
+                </Expander>
+                <RadioButton Content="Суп с лапшой. 120 руб" Height="20">
+                    <RadioButton.ToolTip>
+                        <ToolTip Width="431" Height="277">
+                            <StackPanel>
+                                <Image Source="/1.jpg"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </RadioButton.ToolTip>
+                </RadioButton>
+                <Expander Header="Состав">
+                    <TextBlock>Лапша, курица, морковь</TextBlock>
+                </Expander>
+                <RadioButton Content="Рисовый суп. 120 руб" Height="20">
+                    <RadioButton.ToolTip>
+                        <ToolTip Width="368" Height="348">
+                            <StackPanel>
+                                <Image Source="/rice soup.JPG"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </RadioButton.ToolTip>
+                </RadioButton>
+                <Expander Header="Состав">
+                    <TextBlock>Рис, курица, морковь, лук</TextBlock>
+                </Expander>
+                <RadioButton Content="Суп сырный с грибами. 180 руб" Height="20">
+                    <RadioButton.ToolTip>
+                        <ToolTip Width="334" Height="276">
+                            <StackPanel>
+                                <Image Source="/cheese.JPG"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </RadioButton.ToolTip>
+                </RadioButton>
+                <Expander Header="Состав">
+                    <TextBlock>Сыр, шампиньёны, лисички, зелень</TextBlock>
+                </Expander>
+            </StackPanel>
+        </GroupBox>
         <Button Content="Заказать" Grid.Column="1" Grid.Row="2" FontSize="20"/>
     </Grid>
 </Window>
