@@ -17,7 +17,7 @@
             <RowDefinition Height="108*"/>
             <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Меню ресторана" Grid.Column="1" Grid.ColumnSpan="3" FontSize="30" />
+        <TextBlock Text="Меню ресторана" Grid.Column="1" Grid.ColumnSpan="3" FontSize="30" Foreground="Blue" />
         <GroupBox Header="Первое блюдо (супы)" FontSize="15" Padding="5" Grid.Row="1">
             <StackPanel>
                 <RadioButton Content="Борщ с мясом 150 руб" Height="20">
@@ -70,6 +70,105 @@
                 </Expander>
             </StackPanel>
         </GroupBox>
-        <Button Content="Заказать" Grid.Column="1" Grid.Row="2" FontSize="20"/>
+        <GroupBox Header="Второе блюдо" FontSize="15" Padding="5" Grid.Row="1" Grid.Column="1">
+            <StackPanel>
+                <RadioButton Content="Пюре с котлетой" Height="20">
+                    <RadioButton.ToolTip>
+                        <ToolTip Width="397" Height="301">
+                            <StackPanel>
+                                <Image Source="/kpk.jpg"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </RadioButton.ToolTip>
+                </RadioButton>
+                <Expander Header="Состав">
+                    <TextBlock>Котлета, Картофель, Зелень</TextBlock>
+                </Expander>
+                <RadioButton Content="Макароны с сыром" Height="20">
+                    <RadioButton.ToolTip>
+                        <ToolTip Width="397" Height="301">
+                            <StackPanel>
+                                <Image Source="/pastacheese.JPG"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </RadioButton.ToolTip>
+                </RadioButton>
+                <Expander Header="Состав">
+                    <TextBlock>Макароны, Сыр, Зеленый лук</TextBlock>
+                </Expander>
+                <RadioButton Content="Олевье" Height="20">
+                    <RadioButton.ToolTip>
+                        <ToolTip Width="397" Height="301">
+                            <StackPanel>
+                                <Image Source="/salad.JPG"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </RadioButton.ToolTip>
+                </RadioButton>
+                <Expander Header="Состав">
+                    <TextBlock>Майонез, Яйца, Колбаса, Укроп</TextBlock>
+                </Expander>
+                <RadioButton Content="Голубцы" Height="20">
+                    <RadioButton.ToolTip>
+                        <ToolTip Width="397" Height="301">
+                            <StackPanel>
+                                <Image Source="/lasygolubzi.JPG"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </RadioButton.ToolTip>
+                </RadioButton>
+                <Expander Header="Состав">
+                    <TextBlock>Мясо, Морковь, Лук</TextBlock>
+                </Expander>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Напитки, Десерты, Закуски" FontSize="15" Padding="5" Grid.Row="1" Grid.Column="2">
+            <StackPanel>
+                <RadioButton Content="Чай" Height="20">
+                    <RadioButton.ToolTip>
+                        <ToolTip Width="397" Height="301">
+                            <StackPanel>
+                                <Image Source="/tea.JPG"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </RadioButton.ToolTip>
+                </RadioButton>
+                <Expander Header="Состав">
+                    <TextBlock>Сахар, Лемон или Сливки( по жел. )</TextBlock>
+                </Expander>
+                <RadioButton Content="Пирожки" Height="20">
+                    <RadioButton.ToolTip>
+                        <ToolTip Width="397" Height="301">
+                            <StackPanel>
+                                <Image Source="/pirazok.JPG"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </RadioButton.ToolTip>
+                </RadioButton>
+                <Expander Header="Выбрать:">
+                    <TextBlock>с капустой, с яйцами, c мясом</TextBlock>
+                </Expander>
+                <RadioButton Content="Сок Добрый" Height="20">
+                    <RadioButton.ToolTip>
+                        <ToolTip Width="397" Height="301">
+                            <StackPanel>
+                                <Image Source="/juice.JPG"/>
+                            </StackPanel>
+                        </ToolTip>
+                    </RadioButton.ToolTip>
+                </RadioButton>
+                <RadioButton Content="Батончик Шоколадный" Height="20">
+                <RadioButton.ToolTip>
+                    <ToolTip Width="397" Height="301">
+                        <StackPanel>
+                            <Image Source="/snickers.JPG"/>
+                        </StackPanel>
+                    </ToolTip>
+                </RadioButton.ToolTip>
+                </RadioButton>
+            </StackPanel>
+            
+        </GroupBox>
+        <Button Content="Заказать" Grid.Column="1" Grid.Row="2" FontSize="20" Height="50"/>
     </Grid>
 </Window>

@@ -12,8 +12,16 @@
     <None Remove="1.jpg" />
     <None Remove="borsh.jpg" />
     <None Remove="cheese.JPG" />
+    <None Remove="juice.JPG" />
+    <None Remove="kpk.jpg" />
+    <None Remove="lasygolubzi.JPG" />
+    <None Remove="pastacheese.JPG" />
+    <None Remove="pirazok.JPG" />
     <None Remove="resource\borsh.jpg" />
     <None Remove="rice soup.JPG" />
+    <None Remove="salad.JPG" />
+    <None Remove="snickers.JPG" />
+    <None Remove="tea.JPG" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,7 +32,15 @@
     <Resource Include="1.jpg" />
     <Resource Include="borsh.jpg" />
     <Resource Include="cheese.JPG" />
+    <Resource Include="juice.JPG" />
+    <Resource Include="kpk.jpg" />
+    <Resource Include="lasygolubzi.JPG" />
+    <Resource Include="pastacheese.JPG" />
+    <Resource Include="pirazok.JPG" />
     <Resource Include="rice soup.JPG" />
+    <Resource Include="salad.JPG" />
+    <Resource Include="snickers.JPG" />
+    <Resource Include="tea.JPG" />
   </ItemGroup>
 
 </Project>
